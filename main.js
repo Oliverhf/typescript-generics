@@ -10,11 +10,15 @@ function getBigRooms(rooms, minSize) {
     });
     return bigRooms;
 }
-var bigRooms = getBigRooms(conferenceRoom_1.conferenceRoomData, 20);
-console.log(bigRooms);
-// function shortenArray<T>(data: Array<T>, amountToShorten: number): Array<T> {
-//     return data.splice(amountToShorten, data.length);
-// }
+var getLargeRooms;
+getLargeRooms = getBigRooms;
+var largeRooms = getLargeRooms(conferenceRoom_1.conferenceRoomData, 30);
+console.log(largeRooms);
+function shortenArray(data, amountToShorten) {
+    return data.splice(amountToShorten, data.length);
+}
+var shrinkArray;
+shrinkArray = shortenArray;
 // let stringArray: string[] = ['Visual Basic', 'C++', 'TypeScript', 'JavaScript'];
 // let fewerLanguages = shortenArray(stringArray,2);
 // console.log(fewerLanguages);
